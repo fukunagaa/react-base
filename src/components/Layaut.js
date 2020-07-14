@@ -8,7 +8,7 @@ class Layout extends React.Component {
     this.state = { name: "TAKESHI" };
   }
 
-  changeName(name) {
+  changeName = (name) => {
     this.setState({ name });
   }
 
@@ -16,7 +16,7 @@ class Layout extends React.Component {
     return (
       <div>
         <Header
-          changeTitle={this.changeName.bind(this)}
+          changeTitle={this.changeName}
           name={this.state.name}
         />
         <Footer />
