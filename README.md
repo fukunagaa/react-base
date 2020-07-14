@@ -26,4 +26,15 @@ $ npm install @types/react-dom
 
 
 ### 補足
+##### webpack-dev-serverについて
+- 起動前にindex.htmlをdist配下に配置(app.jsを読み込むパスもいじる。)
+- 開発用のweb サーバの起動
+```
+$ npm run webpack-server
+```
+- ブラウザで起動
+> http://localhost:8080/
+
+
+##### polyfillについて
 エントリーポイントに「@babel/polyfill"」を加えていたが、babelのバージョンアップに伴い非推奨となったみたい
