@@ -10,6 +10,8 @@ class Layout extends React.Component {
     return (
       <div>
         <Header />
+        <Header />
+        <Header />
         <h2>{this.name} add conponent2 </h2>
       </div>
     );
