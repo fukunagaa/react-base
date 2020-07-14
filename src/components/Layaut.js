@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "./Header";
 
 class Layout extends React.Component {
   constructor() {
@@ -8,8 +9,7 @@ class Layout extends React.Component {
   render() {
     return (
       <div>
-        <h1>React Welcome !!</h1>
-        <h2>add conponent1</h2>
+        <Header />
         <h2>{this.name} add conponent2 </h2>
       </div>
     );
