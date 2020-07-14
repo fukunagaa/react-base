@@ -6,7 +6,7 @@ class Header extends React.Component {
     super();
     this.state = { name: "header" };
   }
-  handleChange(e) {
+  handleChange = (e) => {
     const name = e.target.value;
     this.props.changeTitle(name);
   }
@@ -16,7 +16,7 @@ class Header extends React.Component {
         <Title name={this.props.name} />
         <input
           value={this.props.name}
-          onChange={this.handleChange.bind(this)}
+          onChange={this.handleChange}
         />
       </header>
     );
