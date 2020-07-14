@@ -5,13 +5,20 @@ import Footer from "./Footer";
 class Layout extends React.Component {
   constructor() {
     super();
-    this.name = "TAKESHI";
+    this.state = { name: "TAKESHI" };
   }
+
+  changeName(name) {
+    this.setState({ name });
+  }
+
   render() {
     return (
       <div>
-        <Header />
-        <h2>{this.name} add conponent2 </h2>
+        <Header
+          changeTitle={this.changeName.bind(this)}
+          name={this.state.name}
+        />
         <Footer />
       </div>
     );
